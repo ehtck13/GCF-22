@@ -1,0 +1,9 @@
+INSTANCE CREATE
+
+gcloud compute instances create MACHINE NAME --machine-type f1-micro
+
+KUBERNET
+
+gcloud container clusters create nucleus-jumphost-360 --zone ZONEOFQUESTION
+
+gcloud container cluster get-credentials [NAME OF CLUSTER] --zone [ZONE NAME] 
