@@ -11,6 +11,14 @@ ENTRYPOINT ["app","-single=true","-port=8080"]
 EOF
 docker build -t valkyrie-dev:v0.0.3 .
 
+"""
+cd ..
+cd marking
+./step1_v2.sh
+cd ..
+cd valkyrie-app
+""
+
 ./step1_v2.sh
 
 docker run -p 8080:8080 valkyrie-dev:v0.0.3 &
